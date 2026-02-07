@@ -148,3 +148,8 @@ Happy coding! 💚
 - reusable and self contained unit
 - encapsulates a specific functionality or user interface
 - fundamental building block of Vue apps for modular code structuring
+
+### Text Interpolation
+- process of dynamically binding the data to content of HTML element in your template
+- allows you to display value of JS expression or a variable within markup
+- Syntax ```{{data}}```
