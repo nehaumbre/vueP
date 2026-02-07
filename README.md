@@ -153,3 +153,8 @@ Happy coding! 💚
 - process of dynamically binding the data to content of HTML element in your template
 - allows you to display value of JS expression or a variable within markup
 - Syntax ```{{data}}```
+
+### Attribute Binding
+- Binds HTML elements to data in Vue instances
+- Old way : ```v-bind:attr```
+- New way : ```:attr```
