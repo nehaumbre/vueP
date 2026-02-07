@@ -143,3 +143,8 @@ Completing the projects and extending them with TypeScript, Pinia, and Vue Route
 ---
 
 Happy coding! 💚
+
+### Components 
+- reusable and self contained unit
+- encapsulates a specific functionality or user interface
+- fundamental building block of Vue apps for modular code structuring
