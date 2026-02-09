@@ -1,14 +1,19 @@
+
 <script setup>
 //   import SampleComponent1 from './components/SampleComponent1.vue';
 // import SampleComponent2 from './components/SampleComponent2.vue';
 // import MyComponent from './components/MyComponent.vue';
-import AttriBindings from './components/AttriBindings.vue';
+// import AttriBindings from './components/AttriBindings.vue';
+import GlobalStyle from './components/GlobalStyle.vue';
+import LocalStyle from './components/LocalStyle.vue';
 
 </script>
 
 <template>
   <!-- <MyComponent/> -->
-   <AttriBindings/>
+   <!-- <AttriBindings/> -->
+   <GlobalStyle/>
+   <LocalStyle/>
 </template>
 
 <style scoped></style>
