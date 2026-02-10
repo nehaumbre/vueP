@@ -1,9 +1,9 @@
 
 <template>
-    <!-- <h1 v-bind:class="$style['m-class']">Using Module CSS with $ syntax (kabab-case)</h1> -->
-    <!-- <h1 :class="$style['m-class']">Using Module CSS with $ syntax (kabab-case)</h1>
+    <!-- <h1 v-bind:class="$style['m-class']">Using Module CSS with $ syntax (kebab-case)</h1> -->
+    <!-- <h1 :class="$style['m-class']">Using Module CSS with $ syntax (kebab-case)</h1>
     <h2 :class="$style.anotherClass">Using Module CSS with $ syntax (Camel-case)</h2> -->
-    <h1 :class="myClasses['m-class']">Using Module CSS with $ syntax (kabab-case)</h1>
+    <h1 :class="myClasses['m-class']">Using Module CSS with $ syntax (kebab-case)</h1>
     <h2 :class="myClasses.anotherClass">Using Module CSS with $ syntax (Camel-case)</h2>
 </template>
 
