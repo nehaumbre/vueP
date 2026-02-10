@@ -6,6 +6,8 @@
 // import AttriBindings from './components/AttriBindings.vue';
 import GlobalStyle from './components/GlobalStyle.vue';
 import LocalStyle from './components/LocalStyle.vue';
+import CombinedStyle from './components/CombinedStyle.vue';
+import ModuleStyle from './components/ModuleStyle.vue';
 
 </script>
 
@@ -14,6 +16,8 @@ import LocalStyle from './components/LocalStyle.vue';
    <!-- <AttriBindings/> -->
    <GlobalStyle/>
    <LocalStyle/>
+   <CombinedStyle/>
+   <ModuleStyle/>
 </template>
 
 <style scoped></style>

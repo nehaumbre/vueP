@@ -5,8 +5,8 @@
 
 
 
-<style scoped>
+<style>
 .text-red {
-    color:red
+    color:palevioletred
 }
 </style>
