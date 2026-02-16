@@ -8,7 +8,9 @@
 // import LocalStyle from './components/LocalStyle.vue';
 // import CombinedStyle from './components/CombinedStyle.vue';
 // import ModuleStyle from './components/ModuleStyle.vue';
-import MyEvent from './components/MyEvent.vue';
+// import MyEvent from './components/MyEvent.vue';
+
+import MyReactiveComponent from './components/MyReactiveComponent.vue';
 </script>
 
 <template>
@@ -18,7 +20,8 @@ import MyEvent from './components/MyEvent.vue';
    <LocalStyle/>
    <CombinedStyle/>
    <ModuleStyle/> -->
-   <MyEvent/>
+   <!-- <MyEvent/> -->
+  <MyReactiveComponent/>
 </template>
 
 <style scoped></style>
