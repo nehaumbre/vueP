@@ -12,6 +12,7 @@
 
 import MyReactiveComponent from './components/MyReactiveComponent.vue';
 import MyRefComponent from './components/MyRefComponent.vue';
+import ComputedProperties from './components/ComputedProperties.vue';
 </script>
 
 <template>
@@ -22,8 +23,9 @@ import MyRefComponent from './components/MyRefComponent.vue';
    <CombinedStyle/>
    <ModuleStyle/> -->
    <!-- <MyEvent/> -->
-  <MyReactiveComponent/>
-  <MyRefComponent/>
+  <!-- <MyReactiveComponent/> -->
+  <!-- <MyRefComponent/> -->
+  <ComputedProperties/>
   
 </template>
 
