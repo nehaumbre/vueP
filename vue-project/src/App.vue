@@ -11,6 +11,7 @@
 // import MyEvent from './components/MyEvent.vue';
 
 import MyReactiveComponent from './components/MyReactiveComponent.vue';
+import MyRefComponent from './components/MyRefComponent.vue';
 </script>
 
 <template>
@@ -22,6 +23,8 @@ import MyReactiveComponent from './components/MyReactiveComponent.vue';
    <ModuleStyle/> -->
    <!-- <MyEvent/> -->
   <MyReactiveComponent/>
+  <MyRefComponent/>
+  
 </template>
 
 <style scoped></style>
