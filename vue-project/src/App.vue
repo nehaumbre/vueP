@@ -10,9 +10,10 @@
 // import ModuleStyle from './components/ModuleStyle.vue';
 // import MyEvent from './components/MyEvent.vue';
 
-import MyReactiveComponent from './components/MyReactiveComponent.vue';
-import MyRefComponent from './components/MyRefComponent.vue';
-import ComputedProperties from './components/ComputedProperties.vue';
+// import MyReactiveComponent from './components/MyReactiveComponent.vue';
+// import MyRefComponent from './components/MyRefComponent.vue';
+// import ComputedProperties from './components/ComputedProperties.vue';
+import ConditionalRender from './components/ConditionalRender.vue';
 </script>
 
 <template>
@@ -25,7 +26,8 @@ import ComputedProperties from './components/ComputedProperties.vue';
    <!-- <MyEvent/> -->
   <!-- <MyReactiveComponent/> -->
   <!-- <MyRefComponent/> -->
-  <ComputedProperties/>
+  <!-- <ComputedProperties/> -->
+  <ConditionalRender/>
   
 </template>
 
