@@ -14,7 +14,8 @@
 // import MyRefComponent from './components/MyRefComponent.vue';
 // import ComputedProperties from './components/ComputedProperties.vue';
 // import ConditionalRender from './components/ConditionalRender.vue';
-import vfor from './components/vfor.vue';
+// import vfor from './components/vfor.vue';
+// import vModel from './components/v-model.vue';
 </script>
 
 <template>
@@ -29,7 +30,8 @@ import vfor from './components/vfor.vue';
   <!-- <MyRefComponent/> -->
   <!-- <ComputedProperties/> -->
   <!-- <ConditionalRender/> -->
-  <vfor/>
+  <!-- <vfor/> -->
+   <!-- <v-model/> -->
   
 </template>
 
