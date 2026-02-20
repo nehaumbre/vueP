@@ -19,8 +19,8 @@
 // import DynamicProps from './components/DynamicProps.vue';
 // import propValidation from './components/propValidation.vue';
 // import ComplexProps from './components/ComplexProps.vue';
-import CustomValidatorProps from './components/CustomValidatorProps.vue';
-import { ref } from 'vue';
+// import CustomValidatorProps from './components/CustomValidatorProps.vue';
+// import { ref } from 'vue';
 // const firstname = ref('John')
 // const lastname = ref('Doe')
 // const myFavoriteNumber = ref(7)
@@ -30,9 +30,9 @@ import { ref } from 'vue';
   <!-- <MyComponent/> -->
   <!-- <attrBindings/> -->
   <!-- <GlobalStyle/>
-   <LocalStyle/>
-   <CombinedStyle/>
-   <ModuleStyle/> -->
+  <LocalStyle/>
+  <CombinedStyle/>
+  <ModuleStyle/> -->
   <!-- <MyEvent/> -->
   <!-- <MyReactiveComponent/> -->
   <!-- <MyRefComponent/> -->
@@ -44,7 +44,7 @@ import { ref } from 'vue';
   <!-- <DynamicProps :myFavoriteNumber="myFavoriteNumber" :firstname="firstname" :lastname="lastname"/> -->
   <!-- <propValidation  :fullname="'zee'" :age="50"/> -->
   <!-- <ComplexProps :friends = "['alex', 'john', 'kris','sarah']" :userinfo ="{name:'alex', age: 30, location: ['earth','IDK']}" /> -->
-  <CustomValidatorProps :name="'John'" :age="2" :password="'id'"/>
+  <!-- <CustomValidatorProps :name="'John'" :age="2" :password="'id'" /> -->
 </template>
 
 <style scoped></style>

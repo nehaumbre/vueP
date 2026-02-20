@@ -1,6 +1,12 @@
 <script setup>
 defineProps({ friends :Array, userinfo: Object })
 
+// Props: short for properties
+//- used to pass data from parent component to child component
+//-useful for creating reusable or modular components
+// props are immutable
+
+
 </script>
 <template>
     <h1>Complex Props</h1>
