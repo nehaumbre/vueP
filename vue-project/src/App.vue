@@ -13,7 +13,8 @@
 // import MyReactiveComponent from './components/MyReactiveComponent.vue';
 // import MyRefComponent from './components/MyRefComponent.vue';
 // import ComputedProperties from './components/ComputedProperties.vue';
-import ConditionalRender from './components/ConditionalRender.vue';
+// import ConditionalRender from './components/ConditionalRender.vue';
+import vfor from './components/vfor.vue';
 </script>
 
 <template>
@@ -27,7 +28,8 @@ import ConditionalRender from './components/ConditionalRender.vue';
   <!-- <MyReactiveComponent/> -->
   <!-- <MyRefComponent/> -->
   <!-- <ComputedProperties/> -->
-  <ConditionalRender/>
+  <!-- <ConditionalRender/> -->
+  <vfor/>
   
 </template>
 
