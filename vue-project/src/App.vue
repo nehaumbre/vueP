@@ -1,4 +1,3 @@
-
 <script setup>
 //   import SampleComponent1 from './components/SampleComponent1.vue';
 // import SampleComponent2 from './components/SampleComponent2.vue';
@@ -16,23 +15,36 @@
 // import ConditionalRender from './components/ConditionalRender.vue';
 // import vfor from './components/vfor.vue';
 // import vModel from './components/v-model.vue';
+// import prop from './components/staticProp.vue';
+// import DynamicProps from './components/DynamicProps.vue';
+// import propValidation from './components/propValidation.vue';
+// import ComplexProps from './components/ComplexProps.vue';
+import CustomValidatorProps from './components/CustomValidatorProps.vue';
+import { ref } from 'vue';
+// const firstname = ref('John')
+// const lastname = ref('Doe')
+// const myFavoriteNumber = ref(7)
 </script>
 
 <template>
   <!-- <MyComponent/> -->
-   <!-- <attrBindings/> -->
-   <!-- <GlobalStyle/>
+  <!-- <attrBindings/> -->
+  <!-- <GlobalStyle/>
    <LocalStyle/>
    <CombinedStyle/>
    <ModuleStyle/> -->
-   <!-- <MyEvent/> -->
+  <!-- <MyEvent/> -->
   <!-- <MyReactiveComponent/> -->
   <!-- <MyRefComponent/> -->
   <!-- <ComputedProperties/> -->
   <!-- <ConditionalRender/> -->
   <!-- <vfor/> -->
-   <!-- <v-model/> -->
-  
+  <!-- <v-model/> -->
+  <!-- <prop name="john doe"/> -->
+  <!-- <DynamicProps :myFavoriteNumber="myFavoriteNumber" :firstname="firstname" :lastname="lastname"/> -->
+  <!-- <propValidation  :fullname="'zee'" :age="50"/> -->
+  <!-- <ComplexProps :friends = "['alex', 'john', 'kris','sarah']" :userinfo ="{name:'alex', age: 30, location: ['earth','IDK']}" /> -->
+  <CustomValidatorProps :name="'John'" :age="2" :password="'id'"/>
 </template>
 
 <style scoped></style>
