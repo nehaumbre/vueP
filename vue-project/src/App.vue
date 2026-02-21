@@ -20,10 +20,15 @@
 // import propValidation from './components/propValidation.vue';
 // import ComplexProps from './components/ComplexProps.vue';
 // import CustomValidatorProps from './components/CustomValidatorProps.vue';
-// import { ref } from 'vue';
+import ComponentEvent from './components/ComponentEvent.vue';
+import FormComponent from './components/FormComponent.vue';
+import { ref } from 'vue';
+const count = ref(0)
 // const firstname = ref('John')
 // const lastname = ref('Doe')
 // const myFavoriteNumber = ref(7)
+
+const formHandler = (username, email, password)=>{ console.log(`username:${username} email: ${email} password: ${password}`);}
 </script>
 
 <template>
@@ -45,6 +50,9 @@
   <!-- <propValidation  :fullname="'zee'" :age="50"/> -->
   <!-- <ComplexProps :friends = "['alex', 'john', 'kris','sarah']" :userinfo ="{name:'alex', age: 30, location: ['earth','IDK']}" /> -->
   <!-- <CustomValidatorProps :name="'John'" :age="2" :password="'id'" /> -->
+   <!-- <h1>Count: {{ count }}</h1> -->
+  <!-- <ComponentEvent @incrementCounter="count++"/> -->
+  <FormComponent @userinfo = "formHandler"/>
 </template>
 
 <style scoped></style>
