@@ -22,6 +22,11 @@
 // import CustomValidatorProps from './components/CustomValidatorProps.vue';
 // import ComponentEvent from './components/ComponentEvent.vue';
 // import FormComponent from './components/FormComponent.vue';
+// import Slots from './components/Slots.vue';
+// import FallbackSlot from './components/FallbackSlot.vue';
+import NamedSlot from "./components/NamedSlot.vue";
+import DefaultSlot from "./components/DefaultSlot.vue";
+
 // import { ref } from 'vue';
 // const count = ref(0)
 // const firstname = ref('John')
@@ -53,6 +58,30 @@
   <!-- <h1>Count: {{ count }}</h1> -->
   <!-- <ComponentEvent @incrementCounter="count++"/> -->
   <!-- <FormComponent @userinfo = "formHandler"/> -->
+  <!-- <Slots>
+    <h1>content 1</h1>
+    <h2>content 2</h2>
+  </Slots> -->
+  <!-- <FallbackSlot></FallbackSlot> -->
+  <!-- <FallbackSlot><p>
+    Fallback doesnt apply here because content is provided 
+    </p></FallbackSlot> -->
+  <NamedSlot>
+    <!-- v-slot:one -->
+    #two
+    <template v-slot:one>
+      <h1>This content goes to slot "one"</h1>
+    </template>
+    <template #two>
+      <h1>This content goes to slot "two"</h1>
+    </template>
+  </NamedSlot>
+  <hr>
+  <DefaultSlot>
+    <template #default>
+      <h1>This is some random default content</h1>
+    </template>
+  </DefaultSlot>
 </template>
 
 <style scoped></style>
