@@ -24,16 +24,67 @@
 // import FormComponent from './components/FormComponent.vue';
 // import Slots from './components/Slots.vue';
 // import FallbackSlot from './components/FallbackSlot.vue';
-import NamedSlot from "./components/NamedSlot.vue";
-import DefaultSlot from "./components/DefaultSlot.vue";
+// import NamedSlot from "./components/NamedSlot.vue";
+// import DefaultSlot from "./components/DefaultSlot.vue";
+import SchoolComponent from './components/ProvideAndInject/SchoolComponent.vue';
+import PractiseComponent from './components/ProvideAndInject/PractiseComponent.vue';
 
 // import { ref } from 'vue';
+import { provide } from 'vue';
+// provide('studentName','alex')
+// provide('studentAge',20)
+// provide('studentLocation',['Earth','IDK'])
 // const count = ref(0)
 // const firstname = ref('John')
 // const lastname = ref('Doe')
 // const myFavoriteNumber = ref(7)
-
+// const studentName = 'alex'
+// const  studentAge = 20
+// const studentLocation = ['Earth', 'IDK']
 // const formHandler = (username, email, password)=>{ console.log(`username:${username} email: ${email} password: ${password}`);}
+// provide array
+provide('friends',['alex','john','jordan','Kim','sarah'])
+//provide object
+provide('games', {
+  id: 1,
+  title: 'Epic Adventure Game',
+  genre: ['Action', 'Adventure', 'RPG'],
+  platform: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch'],
+  releaseDate: '2022-03-15',
+  developer: {
+    name: 'Awesome Game Studios',
+    location: 'San Francisco, CA',
+    teamSize: 50
+  }
+})
+
+// Using Provide With Array Of Objects
+provide('moreGames', [
+  {
+    title: 'Space Explorer',
+    genre: 'Sci-Fi',
+    platform: 'PC',
+    releaseDate: '2023-05-20'
+  },
+  {
+    title: 'Fantasy Quest',
+    genre: 'Fantasy',
+    platform: 'PlayStation',
+    releaseDate: '2023-07-10'
+  },
+  {
+    title: 'Inception',
+    director: 'Christopher Nolan',
+    genre: 'Sci-Fi',
+    releaseDate: '2010-07-16'
+  },
+  {
+    title: 'The Shawshank Redemption',
+    director: 'Frank Darabont',
+    genre: 'Drama',
+    releaseDate: '1994-09-23'
+  }
+])
 </script>
 
 <template>
@@ -66,8 +117,8 @@ import DefaultSlot from "./components/DefaultSlot.vue";
   <!-- <FallbackSlot><p>
     Fallback doesnt apply here because content is provided 
     </p></FallbackSlot> -->
-  <NamedSlot>
-    <!-- v-slot:one -->
+  <!-- <NamedSlot>
+    
     #two
     <template v-slot:one>
       <h1>This content goes to slot "one"</h1>
@@ -76,12 +127,15 @@ import DefaultSlot from "./components/DefaultSlot.vue";
       <h1>This content goes to slot "two"</h1>
     </template>
   </NamedSlot>
-  <hr>
-  <DefaultSlot>
+  <hr> -->
+  <!-- <DefaultSlot>
     <template #default>
       <h1>This is some random default content</h1>
     </template>
-  </DefaultSlot>
+  </DefaultSlot> -->
+  <!-- <SchoolComponent :studentName="studentName" :studentAge="studentAge" :studentLocation="studentLocation"/> -->
+  <!-- <SchoolComponent/> -->
+  <PractiseComponent/>
 </template>
 
 <style scoped></style>
