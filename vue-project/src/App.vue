@@ -26,8 +26,8 @@
 // import FallbackSlot from './components/FallbackSlot.vue';
 // import NamedSlot from "./components/NamedSlot.vue";
 // import DefaultSlot from "./components/DefaultSlot.vue";
-import SchoolComponent from './components/ProvideAndInject/SchoolComponent.vue';
-import PractiseComponent from './components/ProvideAndInject/PractiseComponent.vue';
+//import SchoolComponent from './components/ProvideAndInject/SchoolComponent.vue';
+//import PractiseComponent from './components/ProvideAndInject/PractiseComponent.vue';
 
 // import { ref } from 'vue';
 import { provide } from 'vue';
@@ -43,48 +43,48 @@ import { provide } from 'vue';
 // const studentLocation = ['Earth', 'IDK']
 // const formHandler = (username, email, password)=>{ console.log(`username:${username} email: ${email} password: ${password}`);}
 // provide array
-provide('friends',['alex','john','jordan','Kim','sarah'])
-//provide object
-provide('games', {
-  id: 1,
-  title: 'Epic Adventure Game',
-  genre: ['Action', 'Adventure', 'RPG'],
-  platform: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch'],
-  releaseDate: '2022-03-15',
-  developer: {
-    name: 'Awesome Game Studios',
-    location: 'San Francisco, CA',
-    teamSize: 50
-  }
-})
+// provide('friends',['alex','john','jordan','Kim','sarah'])
+// //provide object
+// provide('games', {
+//   id: 1,
+//   title: 'Epic Adventure Game',
+//   genre: ['Action', 'Adventure', 'RPG'],
+//   platform: ['PC', 'PlayStation', 'Xbox', 'Nintendo Switch'],
+//   releaseDate: '2022-03-15',
+//   developer: {
+//     name: 'Awesome Game Studios',
+//     location: 'San Francisco, CA',
+//     teamSize: 50
+//   }
+// })
 
-// Using Provide With Array Of Objects
-provide('moreGames', [
-  {
-    title: 'Space Explorer',
-    genre: 'Sci-Fi',
-    platform: 'PC',
-    releaseDate: '2023-05-20'
-  },
-  {
-    title: 'Fantasy Quest',
-    genre: 'Fantasy',
-    platform: 'PlayStation',
-    releaseDate: '2023-07-10'
-  },
-  {
-    title: 'Inception',
-    director: 'Christopher Nolan',
-    genre: 'Sci-Fi',
-    releaseDate: '2010-07-16'
-  },
-  {
-    title: 'The Shawshank Redemption',
-    director: 'Frank Darabont',
-    genre: 'Drama',
-    releaseDate: '1994-09-23'
-  }
-])
+// // Using Provide With Array Of Objects
+// provide('moreGames', [
+//   {
+//     title: 'Space Explorer',
+//     genre: 'Sci-Fi',
+//     platform: 'PC',
+//     releaseDate: '2023-05-20'
+//   },
+//   {
+//     title: 'Fantasy Quest',
+//     genre: 'Fantasy',
+//     platform: 'PlayStation',
+//     releaseDate: '2023-07-10'
+//   },
+//   {
+//     title: 'Inception',
+//     director: 'Christopher Nolan',
+//     genre: 'Sci-Fi',
+//     releaseDate: '2010-07-16'
+//   },
+//   {
+//     title: 'The Shawshank Redemption',
+//     director: 'Frank Darabont',
+//     genre: 'Drama',
+//     releaseDate: '1994-09-23'
+//   }
+// ])
 </script>
 
 <template>
@@ -135,7 +135,7 @@ provide('moreGames', [
   </DefaultSlot> -->
   <!-- <SchoolComponent :studentName="studentName" :studentAge="studentAge" :studentLocation="studentLocation"/> -->
   <!-- <SchoolComponent/> -->
-  <PractiseComponent/>
+  <!-- <PractiseComponent/> -->
 </template>
 
 <style scoped></style>
