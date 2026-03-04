@@ -30,8 +30,8 @@
 //import PractiseComponent from './components/ProvideAndInject/PractiseComponent.vue';
 // import LifeCycleComponent from './components/LifecycleHooks/LifeCycleComponent.vue';
 // import {ref} from 'vue';
-import Watchers from './components/Watchers.vue';
-import ReactiveObjWatcher from './components/reactiveObjWatcher.vue';
+// import Watchers from './components/Watchers.vue';
+// import ReactiveObjWatcher from './components/reactiveObjWatcher.vue';
 // const showOrHide = ref(true)
 // import { ref } from 'vue';
 // import { provide } from 'vue';
@@ -142,9 +142,9 @@ import ReactiveObjWatcher from './components/reactiveObjWatcher.vue';
   <!-- <PractiseComponent/> -->
   <!-- <LifeCycleComponent v-if="showOrHide"/>
   <button @click="showOrHide =!showOrHide">Show/Hide</button> -->
-  <Watchers/>
+  <!-- <Watchers/>
   <hr>
-  <ReactiveObjWatcher/>
+  <ReactiveObjWatcher/> -->
 </template>
 
 <style scoped></style>
