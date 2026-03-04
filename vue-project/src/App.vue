@@ -91,7 +91,7 @@
 //   }
 // ])
 // import RefComponent from './components/Tempref/RefComponent.vue';
-import ToggleFriends from './components/Async/ToggleFriends.vue';
+// import ToggleFriends from './components/Async/ToggleFriends.vue';
 </script>
 
 <template>
@@ -150,7 +150,7 @@ import ToggleFriends from './components/Async/ToggleFriends.vue';
   <ReactiveObjWatcher/> -->
   <!-- <TempRef/> -->
   <!-- <RefComponent/> -->
-  <ToggleFriends/>
+  <!-- <ToggleFriends/> -->
 </template>
 
 <style scoped></style>
