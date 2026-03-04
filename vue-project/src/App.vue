@@ -28,9 +28,11 @@
 // import DefaultSlot from "./components/DefaultSlot.vue";
 //import SchoolComponent from './components/ProvideAndInject/SchoolComponent.vue';
 //import PractiseComponent from './components/ProvideAndInject/PractiseComponent.vue';
-
+import LifeCycleComponent from './components/LifecycleHooks/LifeCycleComponent.vue';
+import {ref} from 'vue';
+const showOrHide = ref(true)
 // import { ref } from 'vue';
-import { provide } from 'vue';
+// import { provide } from 'vue';
 // provide('studentName','alex')
 // provide('studentAge',20)
 // provide('studentLocation',['Earth','IDK'])
@@ -136,6 +138,8 @@ import { provide } from 'vue';
   <!-- <SchoolComponent :studentName="studentName" :studentAge="studentAge" :studentLocation="studentLocation"/> -->
   <!-- <SchoolComponent/> -->
   <!-- <PractiseComponent/> -->
+  <LifeCycleComponent v-if="showOrHide"/>
+  <button @click="showOrHide =!showOrHide">Show/Hide</button>
 </template>
 
 <style scoped></style>
