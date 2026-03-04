@@ -90,7 +90,8 @@
 //     releaseDate: '1994-09-23'
 //   }
 // ])
-import RefComponent from './components/Tempref/RefComponent.vue';
+// import RefComponent from './components/Tempref/RefComponent.vue';
+import ToggleFriends from './components/Async/ToggleFriends.vue';
 </script>
 
 <template>
@@ -148,7 +149,8 @@ import RefComponent from './components/Tempref/RefComponent.vue';
   <hr>
   <ReactiveObjWatcher/> -->
   <!-- <TempRef/> -->
-  <RefComponent/>
+  <!-- <RefComponent/> -->
+  <ToggleFriends/>
 </template>
 
 <style scoped></style>
