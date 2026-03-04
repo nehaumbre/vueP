@@ -96,6 +96,7 @@
 // import YetAnotherComponent from './components/YetAnotherComponent.vue';
 // import CustomDir from './components/CustomDir.vue';
 // import MainComponent from './components/Dynamic/MainComponent.vue';
+import DataFetch from './components/DataFetch.vue';
 </script>
 
 <template>
@@ -160,6 +161,7 @@
   -->
   <!-- <CustomDir/> -->
   <!-- <MainComponent/> -->
+  <DataFetch/>
 </template>
 
 <style scoped></style>
