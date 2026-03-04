@@ -95,6 +95,7 @@
 // import CounterComponent from './components/CounterComponent.vue';
 // import YetAnotherComponent from './components/YetAnotherComponent.vue';
 // import CustomDir from './components/CustomDir.vue';
+import MainComponent from './components/Dynamic/MainComponent.vue';
 </script>
 
 <template>
@@ -158,6 +159,7 @@
   <YetAnotherComponent/>
   -->
   <!-- <CustomDir/> -->
+  <MainComponent/>
 </template>
 
 <style scoped></style>
