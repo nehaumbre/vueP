@@ -32,7 +32,7 @@
 // import {ref} from 'vue';
 // import Watchers from './components/Watchers.vue';
 // import ReactiveObjWatcher from './components/reactiveObjWatcher.vue';
-import TempRef from './components/TempRef.vue';
+// import TempRef from './components/TempRef.vue';
 // const showOrHide = ref(true)
 // import { ref } from 'vue';
 // import { provide } from 'vue';
@@ -146,7 +146,7 @@ import TempRef from './components/TempRef.vue';
   <!-- <Watchers/>
   <hr>
   <ReactiveObjWatcher/> -->
-  <TempRef/>
+  <!-- <TempRef/> -->
 </template>
 
 <style scoped></style>
