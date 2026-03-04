@@ -92,6 +92,8 @@
 // ])
 // import RefComponent from './components/Tempref/RefComponent.vue';
 // import ToggleFriends from './components/Async/ToggleFriends.vue';
+import CounterComponent from './components/CounterComponent.vue';
+import YetAnotherComponent from './components/YetAnotherComponent.vue';
 </script>
 
 <template>
@@ -151,6 +153,8 @@
   <!-- <TempRef/> -->
   <!-- <RefComponent/> -->
   <!-- <ToggleFriends/> -->
+  <CounterComponent/>
+  <YetAnotherComponent/>
 </template>
 
 <style scoped></style>
