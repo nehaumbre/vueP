@@ -90,6 +90,7 @@
 //     releaseDate: '1994-09-23'
 //   }
 // ])
+import RefComponent from './components/Tempref/RefComponent.vue';
 </script>
 
 <template>
@@ -147,6 +148,7 @@
   <hr>
   <ReactiveObjWatcher/> -->
   <!-- <TempRef/> -->
+  <RefComponent/>
 </template>
 
 <style scoped></style>
