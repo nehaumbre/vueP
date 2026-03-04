@@ -28,9 +28,11 @@
 // import DefaultSlot from "./components/DefaultSlot.vue";
 //import SchoolComponent from './components/ProvideAndInject/SchoolComponent.vue';
 //import PractiseComponent from './components/ProvideAndInject/PractiseComponent.vue';
-import LifeCycleComponent from './components/LifecycleHooks/LifeCycleComponent.vue';
-import {ref} from 'vue';
-const showOrHide = ref(true)
+// import LifeCycleComponent from './components/LifecycleHooks/LifeCycleComponent.vue';
+// import {ref} from 'vue';
+import Watchers from './components/Watchers.vue';
+import ReactiveObjWatcher from './components/reactiveObjWatcher.vue';
+// const showOrHide = ref(true)
 // import { ref } from 'vue';
 // import { provide } from 'vue';
 // provide('studentName','alex')
@@ -138,8 +140,11 @@ const showOrHide = ref(true)
   <!-- <SchoolComponent :studentName="studentName" :studentAge="studentAge" :studentLocation="studentLocation"/> -->
   <!-- <SchoolComponent/> -->
   <!-- <PractiseComponent/> -->
-  <LifeCycleComponent v-if="showOrHide"/>
-  <button @click="showOrHide =!showOrHide">Show/Hide</button>
+  <!-- <LifeCycleComponent v-if="showOrHide"/>
+  <button @click="showOrHide =!showOrHide">Show/Hide</button> -->
+  <Watchers/>
+  <hr>
+  <ReactiveObjWatcher/>
 </template>
 
 <style scoped></style>
