@@ -94,6 +94,7 @@
 // import ToggleFriends from './components/Async/ToggleFriends.vue';
 // import CounterComponent from './components/CounterComponent.vue';
 // import YetAnotherComponent from './components/YetAnotherComponent.vue';
+import CustomDir from './components/CustomDir.vue';
 </script>
 
 <template>
@@ -154,7 +155,9 @@
   <!-- <RefComponent/> -->
   <!-- <ToggleFriends/> -->
   <!-- <CounterComponent/>
-  <YetAnotherComponent/> -->
+  <YetAnotherComponent/>
+  -->
+  <CustomDir/>
 </template>
 
 <style scoped></style>
