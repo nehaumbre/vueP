@@ -1,0 +1,93 @@
+v-for
+iterates over an array or object and renders a template for each item in the collection
+why use :key?
+Efficient DOM updates
+when vue renders list of elements it used virtual DOM to determine most efficient way to update actual DOM
+key helps vue identify which elements have changed been added or removed
+without key vue may need to recreate entire DOM structure for each update which is not efficient
+Avoiding common pitfall
+- duplicate key warnings in console
+- incorrect key rendering when items are rearranged in list
+
+v-model
+2 way data binding
+
+Props: short for properties
+- used to pass data from parent component to child component
+-useful for creating reusable or modular components
+props are immutable
+
+
+Component Event
+
+- send child component data to parent component
+- allows child Components to emit events(custom events) that can be listened by parent components
+Child
+$emit - triggers a custom event that carries data that you wanna send to parent
+
+Parent
+- you can use v-on directive(@) to listen to custom event emitted by child
+
+
+
+Slots: 
+- a placeholder inside a component.- It lets you pass content into a component from the outside.
+Think of it like this:The component is a box 📦
+
+The slot is a hole where you can put custom content
+Fallback /Default Content in slots refers to default content that is displayed when no content is provided
+
+Named Slot
+A named slot is just a labeled space inside a component.Think of it like a box with sections:📦 Header📦 Body📦 FooterEach section has a name, so you can decide what goes where.Provide and injectThey are a way to share data from a parent component to deeply nested child components
+without passing props at every level.Normally, data flows like this:Parent → Child → GrandchildUsing props at every step.But what if:Parent → Child → Grandchild → Great-GrandchildAnd only the last one needs the data?Passing props through all components is annoying 😅
+✅ The Solution: Provide & Injectprovide = Parent shares datainject = Child receives that data Even if they are many levels apart.
+⚠️ ImportantIt’s mainly used for:Theme settingsGlobal valuesLibraries / pluginsNot for regular parent → child communication.Lifecycle hooks:Mount: component is being created and inserted into DOMUnmount: component is being removed from DOMonBeforeMount() -Registers a hook to be called right                              before the component  is to be mountedwhen hook is called, component has finished setting its reactive state, but no DOM nodes have been created yetIt is about to execute its DOM render effect for the first timeonMounted() - used to execute logic/ actions after component has been mounted on DOM- this hook is particularly useful for tasks that should occur once component is ready to interact with user, such as fetching data, setting up event listener, or performing initial calcullations
+onBeforeUpdate()= Registers a hook to be called right b4 the component is about to update its DOM tree due to reactive state change-this hook is used to access DOM state before Vue updates the DOM- it is also safe to modify component state inside this hook
+
+
+Watchers
+Watch for changes reactively in a specific property or expression changes
+
+they are part of VueJS reactivity system which enables framework to automatically update the DOM when underlying data changes
+
+Syntax:
+watch(source, callback, options)
+
+Source:
+* ref()
+* Reactive object
+* array
+* Getter function
+Callback:
+callback function is called whenever some data changes
+
+watch(source,(newVal,oldVal) =>{ })
+
+options:(not much used)
+supports the following
+*immediate
+*deep
+*flush
+*onTrack/onTrigger
+
+Template ref:
+- it is a way to create a reference to a child component , element or a DOM element within a template
+which allows you to access and manipulate the referenced object directly in your components logic 
+
+Async Component
+component is loaded and rendered only when needed 
+useful for optimizing initial load time of the app especially when dealing with large and complex components which are not necesary for first page load
+
+defineAsyncComponent()
+
+Composables
+A Composable is a reusable function that packages related state and logic so you can easily "plug and play" the same features across different parts of your app.
+useComposable()
+
+Custom directives :
+Custom directives are reusable "low-level" modifiers used to directly manipulate DOM elements (like auto-focusing or coloring) through special v- attribute
+
+Dynamic components allow you to switch between different components on the fly using a single placeholder.
+
+The One-Liner
+Dynamic components use the <component :is="..."> syntax to render different components based on a variable or state.
