@@ -98,6 +98,7 @@
 // import MainComponent from './components/Dynamic/MainComponent.vue';
 // import DataFetch from './components/DataFetch.vue';
 import GettingDataWithFetch from './components/GettingDataWithFetch.vue';
+import GettingDataWithAxios from './components/GettingDataWithAxios.vue';
 </script>
 
 <template>
@@ -164,6 +165,7 @@ import GettingDataWithFetch from './components/GettingDataWithFetch.vue';
   <!-- <MainComponent/> -->
   <!-- <DataFetch/> -->
   <GettingDataWithFetch/>
+  <GettingDataWithAxios/>
 </template>
 
 <style scoped></style>
