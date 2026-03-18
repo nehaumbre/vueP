@@ -2,14 +2,14 @@
   <h1>Accordians</h1>
   <div class="accordian-container">
     <div v-for="(item, index) in items" :key="index" class="accordian">
-            <div @click="toggleAccordian(index)" class="accordian-header">
-                {{ item.title }}
-                <span class="arrow-icon">{{ item.open ? "▼" : "▶" }}</span>
-                <div v-show="item.open" class="accordian-content">
-                    {{ item.content }}
-                </div>
-            </div>
-        </div>
+      <div @click="toggleAccordian(index)" class="accordian-header">
+        {{ item.title }}
+        <span class="arrow-icon">{{ item.open ? "▼" : "▶" }}</span>
+      </div>
+      <div v-show="item.open" class="accordian-content">
+        {{ item.content }}
+      </div>
+    </div>
   </div>
 </template>
 
@@ -37,12 +37,12 @@ const items = ref([
   },
 ]);
 
-const toggleAccordian = (index)=> {
-    items.value = items.value.map((item,i)=>({  
-        ...item,
-        open: i === index ? !item.open : false
-    }))
-}
+const toggleAccordian = (index) => {
+  items.value = items.value.map((item, i) => ({
+    ...item,
+    open: i === index ? !item.open : false,
+  }));
+};
 </script>
 
 <style scoped>
@@ -69,7 +69,7 @@ const toggleAccordian = (index)=> {
 }
 
 .arrow-icon {
-  font-size: 20px;
+  font-size: 2ch;
 }
 
 .accordian-content {
