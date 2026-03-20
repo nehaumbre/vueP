@@ -8,6 +8,8 @@ import { createApp } from 'vue'
 // To run Project4 Calculator app, uncomment this line:
 // import App from '../Projects/Project4_Calculator/App.vue'
 // To run Project5 WikiClone app, uncomment this line:
-import App from '../Projects/Project5_WikiClone/App.vue'
+// import App from '../Projects/Project5_WikiClone/App.vue'
+// To run Project6 DadJokes app, uncomment this line:
+import App from '../Projects/Project6_DadJokes/App.vue'
 
 createApp(App).mount('#app')
