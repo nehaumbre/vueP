@@ -16,8 +16,8 @@ import { createApp } from 'vue'
 // To run FormValidationsProject app, uncomment this line:
 // import App from '../Projects/FormValidationsProject/App.vue'
 // To run ProgressSteps app, uncomment this line:
-import App from '../Projects/ProgressSteps/App.vue'
+// import App from '../Projects/ProgressSteps/App.vue'
 // To run GithubusersSearch app, uncomment this line:
-// import App from '../Projects/GithubusersSearch/App.vue'
+import App from '../Projects/GithubusersSearch/App.vue'
 
 createApp(App).mount('#app')
