@@ -14,6 +14,10 @@ import { createApp } from 'vue'
 // To run Project7 Password genrator app, uncomment this line:
 // import App from '../Projects/Project7_PasswordGen/App.vue'
 // To run FormValidationsProject app, uncomment this line:
-import App from '../Projects/FormValidationsProject/App.vue'
+// import App from '../Projects/FormValidationsProject/App.vue'
+// To run ProgressSteps app, uncomment this line:
+import App from '../Projects/ProgressSteps/App.vue'
+// To run GithubusersSearch app, uncomment this line:
+// import App from '../Projects/GithubusersSearch/App.vue'
 
 createApp(App).mount('#app')
